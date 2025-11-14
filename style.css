@@ -4,16 +4,16 @@
     font-family: Arial, Helvetica, sans-serif;
     border: border-cover;
 }
- .navbar {
+
+ #navbar {
     height: 60px;
-    width: 100vw;
+    width:100vw;
     background-color: #0f1111;
     color: white;
     display: flex;
     align-items: center;
     padding: 0 20px;
     justify-content: space-evenly;
-    position: fixed;
 }
 
 .nav_logo {
@@ -21,6 +21,7 @@
     align-items: center;
     gap: 10px;
 }
+
 .logo{
     background-image: url("amazone_logo.png");
     background-repeat: no-repeat;
@@ -51,14 +52,17 @@
     align-items: center;
     gap: 5px;
 }
+
 .add-first{
     color:#cccccc;
     font-size: 0.85rem;
 }
+
 .add-second{
     color: white;
     font-size:15px;
 }
+
 .nav-search{
     display: flex;
     justify-content: space-evenly;
@@ -68,6 +72,7 @@
     border-radius: 4px;
 
 }
+
 .search-select{
     background-color: #f3f3f3;
     width: 50px;
@@ -76,11 +81,13 @@
     border-bottom-left-radius: 4px;
     border: none;
 }
+
 .search-input{
     width:100%;
 font-size: 1rem;
 border: none;
 }
+
 .search-icon{
     width: 45px;
     display: flex;
@@ -92,23 +99,29 @@ border: none;
     border-bottom-right-radius: 4px; 
     color: #0f1111;
 }
+
 .nav-search:hover{
    border: 2px solid orange;
 }
+
 span{
     font-size: 0.7rem;
 }
+
 .nav-second{
     font-size: 0.85rem;
     font-weight: 700;
 }
+
 .nav-cart i{
    font-size: 30px;
 }
+
 .nav-cart{
     font-size: 0.85rem;
     font-weight: 700;
 }
+
 .panel{
     height: 40px;
     background-color: #222f3d;
@@ -116,22 +129,25 @@ span{
     color: white;
     align-items: center;
     justify-content: space-evenly;
-    padding-top:63px;
 }
+
 .panel-ops p{
     display: inline;
     margin-left: 15px;
 }
+
 .panel-ops{
     width: 70%;
     font-size: 0.85rem;
 
 }
+
 .panel-deals{
     font-size: 0.9rem;
     font-weight: 700;
 
 }
+
 .hero-section{
     background-image: url("hero_section.jpg");
     height: 350px;
@@ -141,6 +157,7 @@ span{
     align-items: flex-end;
 
 }
+
 .hero-msg{
     background-color: white;
     color: #0f1111;
@@ -152,11 +169,13 @@ span{
     width: 80%;
     margin-bottom: 25px;
 }
+
 .hero-msg a{
-    color: #007185;
+    color: #f60a0a;
     cursor: pointer;
     text-decoration: none;
 }
+
 .shop-section{
     display: flex;
     flex-wrap: wrap;
@@ -164,34 +183,38 @@ span{
     background-color:#e2e7e6;
     
 }
+
 .box{
-    /* border: 2px solid black; */
     height:380px;
     width: 23%;
     background-color: white;
     padding:20px 0px 15px;
     margin-top: 15px;
 }
+
 .box-img{
     height: 300px;
     background-size: cover;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
 .box-content{
 margin-left: 1rem;
 margin-right: 1rem;
 }
+
 .box-content p{
     color: #007185;
     cursor: pointer;
 }
+
 footer{
     margin-top: 15px;
 }
+
 .foot-panel1{
-    background-color: #37475a;
-    color: white;
+    background-color: #274058;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -199,6 +222,11 @@ footer{
     font-size: 0.85rem;
 
 }
+ .foot-panel1 a{
+        color: #048500;
+        text-decoration: none;
+    }
+
 .foot-panel2{
     background-color: #222f3d;
     color: white;
@@ -206,9 +234,11 @@ footer{
     display:flex;
     justify-content: space-evenly;
 }
+
 ul{
     margin-top: 20px;
 }
+
 ul a{
     display: block;
     font-size: 0.85rem;
@@ -216,6 +246,7 @@ ul a{
     color: #dddddd;
     text-decoration: none;
 }
+
 .foot-panel3{
     background-color: #222f3d;
     color: white;
@@ -225,12 +256,14 @@ ul a{
     justify-content: center;
     align-items: center;
 }
+
 .logo{
     background-image: url("amazone_logo.png");
     background-size: cover;
     height: 50px;
     width: 100px;  
 }
+
 .foot-panel4{
     background-color: #0f1111;
     color: white;
@@ -238,26 +271,23 @@ ul a{
     text-align: center;
     padding-top: 25px
 }
+
 .pages{
 font-size: 0.7rem;
 }
+
 .copyright{
     padding-top: 5px;
 }
 
- /* ----------------------------------------------
-   RESPONSIVE DESIGN FOR SCREEN ≤ 1080px
-------------------------------------------------*/
-@media (max-width: 1080px){
 
-    /* Navbar responsive */
-    .navbar {
+@media (max-width: 1080px){
+    #navbar {
         height: auto;
         padding:0px 26px 2px 1px;
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
-        position: fixed;
     }
     .logo{
         right: 50px;
@@ -271,18 +301,16 @@ font-size: 0.7rem;
     .search-select {
         width: 60px;
     }
+
     .search-icon{
         background-color: red;
     }
 
-    /* Panel moves down automatically */
     .panel {
         display: none;
     }
 
-    /* Hero section */
     .hero-section {
-        padding-top:200px;
         height: 250px;
         background-position: center;
     }
@@ -293,8 +321,10 @@ font-size: 0.7rem;
         width: 90%;
         font-size: 0.75rem;
     }
+    .hero-msg a{
+    color: black;
+    }
 
-    /* Boxes become single column */
     .shop-section {
         display: grid;
         grid-template-columns: 1fr;
@@ -311,8 +341,11 @@ font-size: 0.7rem;
     .box-img {
         height: 250px;
     }
+    .foot-panel1 a{
+        color: #048500;
+        text-decoration: none;
+    }
 
-    /* Footer responsive */
     .foot-panel2 {
         height: auto;
         flex-wrap: wrap;
@@ -325,7 +358,6 @@ font-size: 0.7rem;
         margin-bottom: 20px;
     }
 
-    /* Small devices footer fix */
     @media (max-width: 600px) {
         .foot-panel2 ul {
             width: 100%;
