@@ -29,7 +29,8 @@
     width: 100px;
     border: 2px solid transparent;
 }
-.nav-singin a{
+.nav-singin a,
+.nav-return a{
     color: white;
     text-decoration: none;
 }
